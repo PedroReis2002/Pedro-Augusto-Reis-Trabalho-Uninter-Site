@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Pedro Augusto Siliprandi Reis</title>
+    </head>
+    <style>
+        
+        /* Formatação do body do código*/
+        body {
+            margin: 0%;
+            color: #27374D;
+            background-color: #DDE6ED;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+       
+        /* Ajuda na criação da faixa de fundo no topo do site*/
+        .container{
+            display: grid;
+        }
+
+
+        /* Ajuda na criação dos containers que irão ser usado na parte de comentários*/
+        .containerDeComentarios {
+            border-radius: 5px;
+            background-color: #9DB2BF;
+            padding: 20px;
+        }
+
+
+        /* Cria a estética do botão*/
+        .button {
+            border: none;
+            color: #27374D;
+            border: 2px solid #27374D;
+            background-color: #DDE6ED;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 5px 178px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            align-items: center;
+        }
+
+
+        /* Adiciona cor a animação presente nos botões quando o mouse passa por cima*/
+        .button:hover{
+            background-color: #27374D;
+            color: #DDE6ED;
+        }
+       
+        /* Serve para permitir que o usuário consiga escrever no containers*/
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 1px;
+            background-color: #DDE6ED;
+            color: #27374D;
+            box-sizing: border-box;
+            margin-bottom: 2px;
+            resize: vertical;
+        }
+
+
+        /* Cria a estética do botão de enviar comentários*/
+        .buttonEnviar {
+            border: none;
+            color: #27374D;
+            border: 2px solid #27374D;
+            background-color: #DDE6ED;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 5px 10px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            align-items: center;
+        }
+
+
+        /* Adiciona cor a animação presente nos botões quando o mouse passa por cima*/
+        .buttonEnviar:hover{
+            background-color: #27374D;
+            color: #DDE6ED;
+        }
+
+
+        /* Essa parte serve para padronizar algumas das formatações dos headers*/
+        header {
+            grid-column-start: 10;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 1;
+            background-color: #9DB2BF;
+        }
+       
+        /* Formatação para headers principais*/
+        h1 {
+            font-size: 35px;
+            text-align: center;
+        }      
+
+
+        /* Formatação para outros textos*/
+        .b1 {
+            font-size: 30px;
+            text-align: center;
+            text-decoration: solid;
+        }
+
+
+        /* Formatação para outros outros textos*/
+        .b2 {
+            font-size: 30px;
+            text-align: justify;
+            line-height: 40px;
+            margin: 20px 300px;
+            padding: 10px;
+            background-color: #707c85;
+            border: 2px solid #27374D;
+        }
+
+
+        /* Formatação para outros outros outros textos*/
+        .b3 {
+            font-size: 20px;
+            text-align: justify;
+            text-decoration: solid;
+        }
+
+
+        /* Delimita as dimensões das imagens*/
+        .imagem {
+            width: 140px;
+            height: auto;
+            margin-left: 270px;
+        }
+
+
+    </style>
+    <body>
+        <!-- Cria o título principal da página -->
+        <header class="container">
+            <h1>Contatos</h1>
+        </header>
+
+
+        <!-- Cria um pequeno subtítulo que introduz o'que será    dito -->
+        <p class="b1">
+            Você pode me encontrar em:
+        </p>
+
+
+        <!-- Conteúdo da parte "Você pode me encontrar em:" -->
+        <p class="b2">
+            - Pelo e-mail: player1pedro@gmail.com;
+            <br>
+            - Pelo WhatsApp: +55 00 00000-0000;
+            <br>
+            - Pelo Twitter: @PedroReis447;
+        </p>
+
+
+        <!-- Todas essas linhas são imagens sendo colocadas no site após serem retiradas do folder "Imagens"  -->
+        <img src="Imagens/Gmail.png" alt="Gmail" class="imagem">
+
+
+        <img src="Imagens/Zap.png" alt="WhatsApp" class="imagem">
+
+
+        <img src="Imagens/twitter.png" alt="Twitter" class="imagem">
+
+
+        <br><br><br>
+
+
+        <!-- Botão que leva ao GitHub -->
+        <a href="https://github.com/PedroReis2002">
+            <button class="button">
+                GitHub
+            </button>
+        </a>
+
+
+        <!-- Botão que leva a pagina "Formação"-->
+        <a href="Formação.HTML">
+            <button class="button">
+                Formação
+            </button>
+        </a>
+
+
+        <!-- Botão que leva a página "Contato" -->
+        <a href="index.html">
+            <button class="button">
+                Sobre mim
+            </button>
+        </a>
+
+
+        <!-- Cria um subtítulo para introduzir a parte de comentários -->
+        <p class="b1">
+            Ou deixe um comentário:
+        </p>
+
+
+        <!-- Essa parte insere os containers para que as informações e o comentário sejam inseridos -->
+        <div class="containerDeComentarios">
+            <form>
+            <p class="b3">Nome<p>
+                <input type="text" placeholder="Qual o seu nome?">
+                
+                <p class="b3">E-mail<p>
+                <input type="text" placeholder="Qual o seu e-mail? (Opcional)">
+
+
+                <p class="b3">Digite seu comentário</p>
+                <textarea placeholder="Qual o seu comentário?" style="height:200px"></textarea>
+
+            <button class="buttonEnviar"> Enviar </button>
+            </form>
+        </div>
+
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mim - Pedro Augusto Siliprandi Reis</title>
+    <style>
+       
+        /* Formatação do body do código*/
+        body {
+            margin: 0%;
+            color: #27374D;
+            background-color: #DDE6ED;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+       
+        /* Ajuda na criação da faixa de fundo no topo do site*/
+        .container{
+            display: grid;
+        }
+
+
+        /* Essa parte serve para padronizar algumas das formatações dos headers*/
+        header {
+            grid-column-start: 10;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 1;
+            background-color: #9DB2BF;
+        }
+       
+        /* Delimita as dimensões da imagem*/
+        .image_EU{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 20%;
+        }
+
+
+        /* Formatação para headers principais*/
+        h1 {
+            font-size: 35px;
+            text-align: center;
+        }
+
+
+        /* Formatação para headers secundários*/
+        h2 {
+            font-size: 30px;
+            text-align: center;
+            background-color: #9DB2BF;
+        }
+
+
+        /* Formatação para outros textos*/
+        .b1 {
+            font-size: 30px;
+            text-align: center;
+            text-decoration-line: underline;
+        }
+
+
+        /* Formatação para outros outros textos*/
+        .b2 {
+            font-size: 20px;
+            text-align: center;
+            margin: 20px 300px;
+        }
+
+
+        /* Cria a estética do botão*/
+        .button {
+            border: none;
+            color: #27374D;
+            border: 2px solid #27374D;
+            background-color: #DDE6ED;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 5px 182px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            align-items: center;
+        }
+
+
+        /* Adiciona cor a animação presente nos botões quando o mouse passa por cima*/
+        .button:hover{
+            background-color: #27374D;
+            color: #DDE6ED;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <!-- Cria o título principal da página -->
+    <header class="container">
+        <h1>Portfólio</h1>
+    </header>
+
+    <!-- Cria o segundo título da página -->
+    <h2>Estudante de Engenharia de Software e Empresário Amador </h2>
+   
+    <!-- Pega a imagem "Eu.png" e a coloca no site  -->
+    <img src="Imagens/Eu.png" alt="Sou eu" class="image_EU">
+
+    <!-- Cria um pequeno subtítulo que introduz o'que será dito -->
+    <p class="b1">
+        Sobre mim
+    </p>
+
+
+    <!-- Conteúdo da parte "Sobre mim" -->
+    <p class="b2">
+        Meu nome é Pedro Augusto Siliprandi Reis, tenho 21 anos, sou um estudante de TI e um empresário amador. Nesse momento, eu estou trabalhando em conseguir o meu bacharelado na faculdade Uninter e aprender ainda mais sobre como gerir uma empresa para eventualmente conseguir criar e manter uma de sucesso.
+    </p>
+
+
+    <!-- Botão que leva ao GitHub -->
+    <a href="https://github.com/PedroReis2002">
+        <button class="button">
+            GitHub
+        </button>
+    </a>
+
+
+    <!-- Botão que leva a pagina "Formação"-->
+    <a href="Formação.HTML">
+        <button class="button">
+            Formação
+        </button>
+    </a>
+
+
+    <!-- Botão que leva a página "Contato" -->
+    <a href="Contato.HTML">
+        <button class="button">
+            Contato
+        </button>
+    </a>
+
+
+    <br><br>
+
+
+</body>
+</html>

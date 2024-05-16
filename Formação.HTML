@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formação - Pedro Augusto Siliprandi Reis</title>
+    <style>
+
+        /* Formatação do body do código*/
+        body {
+            margin: 0%;
+            color: #27374D;
+            background-color: #DDE6ED;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        /* Ajuda na criação da faixa de fundo no topo do site*/
+        .container{
+            display: grid;
+        }
+
+        /* Essa parte serve para padronizar algumas das formatações dos headers*/
+        header {
+            grid-column-start: 10;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 1;
+            background-color: #9DB2BF;
+        }
+       
+        /* Formatação para headers principais*/
+        h1 {
+            font-size: 35px;
+            text-align: center;
+        }      
+
+        /* Formatação para outros textos*/
+        .b1 {
+            font-size: 30px;
+            text-align: center;
+            text-decoration: solid;
+        }
+
+        /* Formatação para outros outros textos*/
+        .b2 {
+            font-size: 20px;
+            text-align: justify;
+            line-height: 40px;
+            margin: 20px 300px;
+            padding: 10px;
+            background-color: #707c85;
+            border: 2px solid #27374D;
+        }
+
+        /* Delimita as dimensões das três imagem no fundo do site*/
+        .imagem {
+            width: 230px;
+            height: auto;
+            margin-left: 200px;
+        }
+
+        /* Cria a estética do botão*/
+        .button {
+            border: none;
+            color: #27374D;
+            border: 2px solid #27374D;
+            background-color: #DDE6ED;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 5px 179px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            align-items: center;
+        }
+
+        /* Adiciona cor a animação presente nos botões quando o mouse passa por cima*/
+        .button:hover{
+            background-color: #27374D;
+            color: #DDE6ED;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Cria o título principal da página -->
+    <header class="container">
+        <h1>Formação</h1>
+    </header>
+
+    <!-- Cria um pequeno subtítulo que introduz o'que será dito -->
+    <p class="b1">
+        Minhas formações incluem:
+    </p>
+
+    <!-- Conteúdo da parte "Minhas formações incluem" -->
+    <p class="b2">
+        - Ensino Médio Completo;
+        <br>
+        - Mais de 8 anos de experiência lidando com clientes;
+        <br>
+        - Prática extensiva sobre como organizar uma equipe e como trazer o melhor em todos;
+        <br>
+        - Eu amo animais;
+        <br>
+        - Mais de um ano de estudos sobre direito.
+    </p>
+
+    <!-- Todas essas linhas são imagens sendo colocadas no site após serem retiradas do folder "Imagens"  -->
+    <img src="Imagens/paw-solid.png" alt="Patinha" class="imagem">
+
+    <img src="Imagens/people-group-solid.png" alt="Trabalho em Equipe" class="imagem">
+
+    <img src="Imagens/balance.png" alt="Balança" class="imagem">
+
+    <br><br>
+
+    <!-- Botão que leva ao GitHub -->
+    <a href="https://github.com/PedroReis2002">
+        <button class="button">
+            GitHub
+        </button>
+    </a>
+
+    <!-- Botão que leva a pagina "Formação"-->
+    <a href="index.html">
+        <button class="button">
+            Sobre mim
+        </button>
+    </a>
+
+    <!-- Botão que leva a página "Contato" -->
+    <a href="Contato.HTML">
+        <button class="button">
+            Contato
+        </button>
+    </a>
+
+    <br><br>
+
+</body>
+</html>
